@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Mensajes</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+
+    <header>
+        <img src="/imagenes/Logo.jpg" alt="" class="logo">
+        <div class="caja">
+            <h1>Encriptador  -  Desencriptador de Mensajes.</h1>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="container">
+            <div class="navegacion">
+                <ul>
+                    <li class="list active">
+                        <a href="#" onclick="encriptar()">
+                        <span class="icono"><i class="bi bi-fingerprint"></i></span>
+                        <span class="texto">Encriptar</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#" onclick="desencriptar()">
+                        <span class="icono"><i class="bi bi-unlock"></i></span>
+                        <span class="texto">Desencriptar</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#" " onclick="copiando()">
+                        <span class="icono"><i class="bi bi-copy"></i></span>
+                        <span class="texto">Copiar</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#" onclick="limpiando()">
+                        <span class="icono"><i class="bi bi-trash"></i></span>
+                        <span class="texto">Limpiar</span>
+                        </a>
+                    </li>
+                    <div class="indicador"></div>
+                </ul>
+            </div>
+
+            <div class="zona-trabajo">
+                <div>
+                    <label for="textoent" class="mensaje entrada">Texto de entrada.</label>
+                </div>
+                <div>
+                    <textarea name="" id="textoent" cols="60" rows="10" class="input-texto t-entrada" required></textarea>
+                </div>
+                <div>
+                    <label for="mensaje" class="mensaje textos">Mensaje</label>
+                </div>
+            </div>
+            <img src="/imagenes/Muñeco.png" alt="" class="muneco profundidad" id="muneco">
+            <p class="mens-muneco profundidad" id="mens1">Ningún mensaje fue encontrado. </p>
+            <p class="mens-muneco2 profundidad" id="mens2">Ingresa el texto que deseas encriptar o desencriptar.</p>
+            <textarea name="" id="mensaje" cols="60" rows="27" class="input-texto t-textos"  ></textarea>
+        </div>
+
+    </main>
+
+    <footer>
+        <p class="copyright">&copy Copyright José Martín Cruz Segura - Toluca, México - 2024</p>
+    </footer>
+    
+    <script src="app.js"></script>
+
+    <script>
+        const list = document.querySelectorAll(".list");
+        function activeLink() {
+        list.forEach((item) => item.classList.remove("active"));
+        this.classList.add("active");
+        }
+        list.forEach((item) => item.addEventListener("click", activeLink));
+    </script>
+  
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
