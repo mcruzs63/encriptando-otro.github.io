@@ -21,12 +21,14 @@ function encriptar() {
         mune.style.zIndex=1;
         mensa1.style.zIndex=1;
         mensa2.style.zIndex=1;
+        emoji.style.zIndex=1;
         return;
     }
 
     mune.style.zIndex=0;
     mensa1.style.zIndex=0;
     mensa2.style.zIndex=0;
+    emoji.style.zIndex=0;
 
     for (let i = 0; i < largo; i++) {
         
@@ -76,12 +78,14 @@ function desencriptar() {
         mune.style.zIndex=1;
         mensa1.style.zIndex=1;
         mensa2.style.zIndex=1;
+        emoji.style.zIndex=1;
         return
     }
 
     mune.style.zIndex=0;
     mensa1.style.zIndex=0;
     mensa2.style.zIndex=0;
+    emoji.style.zIndex=0;
 
     for (let i = 0; i < largo; i++) {
 
@@ -186,6 +190,7 @@ function copiando(){
     mune.style.zIndex=1;
     mensa1.style.zIndex=1;
     mensa2.style.zIndex=1;
+    emoji.style.zIndex=1;
     return; 
 }
 
@@ -195,5 +200,6 @@ function limpiando(){
     mune.style.zIndex=1;
     mensa1.style.zIndex=1;
     mensa2.style.zIndex=1;
+    emoji.style.zIndex=1;
     return;
 }
