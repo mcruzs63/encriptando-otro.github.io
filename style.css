@@ -198,14 +198,6 @@ h1 {
 	width: 350px;
 }
 
-/*
-.muneco {
-	position: absolute;
-	top: 650px;
-	left: 40px;
-}
-*/
-
 .bi-emoji-sunglasses {
 	position: absolute;
 	top: 650px;
@@ -289,13 +281,6 @@ h1 {
 		width: 700px;
 	}
 
-	/*
-	.muneco {
-		top: 650px;
-		left: 200px;
-	}
-	*/
-
 	.bi-emoji-sunglasses {
 		top: 650px;
 		left: 280px;
@@ -366,13 +351,6 @@ h1 {
 		left: 900px;
 		width: 600px;
 	}
-
-	/*
-	.muneco {
-		top: 360px;
-		left: 1040px;
-	}
-	*/
 
 	.bi-emoji-sunglasses {
 		top: 400px;
